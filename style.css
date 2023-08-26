@@ -15,7 +15,7 @@ body {
 
 .container {
   background-color: hsl(0, 0%, 100%);
-  width: 315px;
+  max-width: 315px;
   padding: 15px;
   border-radius: 20px;
   position: absolute;
@@ -46,10 +46,17 @@ h2 {
   color: hsl(218, 44%, 22%);
   margin-bottom: 15px;
   font-weight: 700;
+  font-size: 1.4em;
 }
 
 p {
   color: hsl(220, 15%, 55%);
   font-size: 15px;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 100%;
+  }
 }
